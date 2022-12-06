@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+    crossorigin="anonymous">
+    <style>
+      [class*="col-"] {
+        width: 100%;
+        }
+        @media only screen and (min-width: 600px) {
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+      }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+        body {
+          overflow-x: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: rgb(0, 0, 0);
+             }
+        .select {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+             }
+         
+            #logo{
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: center;
+            }
+                  .flip-box {
+                   background-color: transparent;
+                   margin: 10px;
+                   width: 250px;
+                   height: 300px;
+                   border: 1px solid #802020;
+                   box-shadow: -5px -5px 15px #444, 5px 5px 15px red, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+                   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+                   display: flex;
+                   justify-content: center;
+                   margin-left: auto;
+                   margin-right: auto;
+                   
+                 }
+
+                 /* This container is needed to position the front and back side */
+                 .flip-box-inner {
+                   position: relative;
+                   width: 100%;
+                   height: 100%;
+                   text-align: center;
+                   transition: transform 0.8s;
+                   transform-style: preserve-3d;
+                 }
+
+                 /* Do an horizontal flip when you move the mouse over the flip box container */
+                 .flip-box:hover .flip-box-inner {
+                   transform: rotateY(180deg);
+                 }
+
+                 /* Position the front and back side */
+                 .flip-box-front, .flip-box-back {
+                   position: absolute;
+                   width: 100%;
+                   height: 100%;
+                   -webkit-backface-visibility: hidden; /* Safari */
+                   backface-visibility: hidden;
+                 }
+
+                 /* Style the front side (fallback if image is missing) */
+                 .flip-box-front {
+                   background-color: #bbb;
+                   color: black;
+                 }
+
+                 /* Style the back side */
+                 .flip-box-back {
+                   background-color: black;
+                   color: white;
+                   transform: rotateY(180deg);
+                 }
+                 .wrapper{
+                   display: flex;
+                   justify-content: center;
+                   margin-left: auto;
+                   margin-right: auto;
+                 }
+
+                   #hardrock{
+                     border-radius: 100px;
+                       box-shadow: -5px -5px 15px #444, 5px 5px 15px red, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+                   }
+                   footer{
+                     height: 100px;
+                     color: #802020;
+                     text-align: left;
+                   }
+                   #info{
+                     display: block;
+                     color: silver;
+                     padding: 15px;
+                     width:800px;
+                   }
+                   p{
+                     display: flex;
+                     justify-content: center;
+                     font-family: "Comic Sans" sans-serif;
+                     font-size: 10pt;
+                     padding: 5px;
+                   }
+                   
+             .text{
+               display: block;
+               color: rgb(255, 255, 255);
+               border-style: ridge;
+               border-color: #802020;
+               padding: 20px;
+               margin: 20px;
+             }
+             .container{
+                gap: 10px;
+             }
+             .een{
+    color: white;
+    animation-timing-function: ease-in;
+    background-color: grey;
+    height: 100px;
+    text-align: center;
+    box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+    font-size: 25pt;
+    border-radius: 15px;
+    width: 100%;
+    
+}
+    
+    
+@media only screen and (max-width: 800px){
+    .een{
+        background-color: rgb(121, 1, 1);
+        color: rgb(255, 255, 255);
+        padding: 25px;
+        font-size: 10pt;
+        box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+        border-radius: 25px;
+        height: 30px;
+    }
+}
+.een{
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+    
+  }
+
+  
+.twee{
+    color: white;
+    background-color: grey;
+    height: 100px;
+    text-align: center;
+    animation-timing-function: ease-in;
+    box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+    font-size: 25pt;
+    border-radius: 15px;
+}
+@media only screen and (max-width: 800px){
+    .twee{
+        background-color: rgb(121, 1, 1);
+        color: rgb(255, 255, 255);
+        font-size: 10pt;
+        box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+        border-radius: 15px;
+        padding: 25px;
+        height: 30px;
+        text-align: center;
+    }
+}
+.twee{
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.drie{
+    color: white;
+    background-color: grey;
+    height: 100px;
+    text-align: center;
+    animation-timing-function: ease-in;
+    box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+    font-size: 25pt;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px){
+    .drie{
+        background-color: rgb(121, 1, 1);
+        color: rgb(255, 255, 255);
+        font-size: 10pt;
+        padding: 20px;
+        box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+        border-radius: 25px;
+        height: 30px;
+        text-align: center center;
+    }
+}
+.drie {
+    animation-duration: 4s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slideout {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .een:hover, .twee:hover, .drie:hover{
+    background-color: rgb(201, 0, 0);
+  }
+  .een:active, .twee:active, .drie:active{
+    color: white;
+  }
+  a:link, a:visited{
+    text-decoration: none;
+    pointer-events: initial;
+  }
+  a:hover{
+    color: darkred;
+    pointer-events: initial;
+  }
+  a:active{
+    color: red;
+    pointer-events: initial;
+  }
+  .demo{
+    font-size: 12pt;
+  }
+
+      </style>
+        <title>Over ons</title>
+      </head>
+      <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+          <div class="header">
+              <img id="logo" src="img/logo.jpg" alt name="logo" width="450px" height="300px"><br>
+              <br>
+              <br>
+          <div class="col-sm-12">
+            <div class="container">
+                <a href='home.html'><div class="een">Home</div></a>
+                <a href='about1.html'><div class="twee">Over ons</div></a>
+                <a href='#'><div class="drie">Contact</div></a>
+            </div>
+            </div>
+            </div>
+          </div>
+          </div>
+          <br>
+          <br>
+          <div class="wrapper">
+            <div class="row">
+            <div class="col-sm">
+              <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="img/frans.jpg" alt name="gitarist" style="width:250px; height:300px;">
+                  </div>
+                  <div class="flip-box-back">
+                    <br>
+                  <h4>Frans</h4>
+                  <br>
+                  <p><i>Zijn liefde voor de gitaar is begonnen na het horen van 'Running with the devil' van van Halen.
+                    Sindsdien speelt hij stevige Rock, en na diverse bands te hebben versleten heeft hij nu zijn draai gevonden met de huidige band.</i>
+                  </p>
+                  <br>
+                  <br>
+                  
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class="col-sm">
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="img/marcel2.jpg" alt name="bassist" style="width:250px;height:300px">
+                    </div>
+                    <div class="flip-box-back">
+                      <br>
+                      <h4>Marcel</h4>
+                      <br>
+                      <p><i>Marcel bespeelt al jarenlang de basgitaar.
+                        Klassiek geschoold, maar zijn passie ligt toch echt bij Rockmuziek!</i>
+                      </p>
+                      <br>
+                      <br>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="img/zangeres.jpg" alt name="zangeres" style="width:250px;height:300px">
+                  </div>
+                  <div class="flip-box-back">
+                    <br>
+                    <h4>Jessica</h4>
+                    <p><i>Muziek is haar uitlaatklep.Haar ziel en zaligheid liggen in de muziek die Whatever ten gehore brengt.
+                        Ondanks haar brede smaak voor muziek, ligt haar hart bij Rock.
+                        Van jongs af aan zingen op verjaardagen tot de meidenband van school.Na een korte carriere als zingende barkeepster heeft zij zich ontpopt tot volwaardig frontvrouw!
+                        Met Whatever bouwt zij graag een feestje op uw podium!
+                    </i></p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="img/drummer.JPG" alt name="drummer" style="width:250px;height:300px">
+                  </div>
+                  <div class="flip-box-back">
+                    <br>
+                    <h4>Justin</h4>
+                    <p><i>ooit als kleine jongen begonnen met een djembe, maar al snel werd dit een drumstel. Tot groot plezier van de buurt vond hij een band, dus kon hij nog meer oefenen.De focus kwam snel op Rock, wat de nodige rondvliegende drumstokken als gevolg had. Verschillende stijlen zijn geen enkel punt, maar zijn grootste plezier is rocken met Whatever!</i></p>
+                    
+                  </div>
+                </div>
+              </div>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="text">
+            
+           Whatever bestaat inmiddels al een aardige tijd. Tijdens het bedenken van de bandnaam, bespraken de leden wat ze graag wilden gaan spelen.<br>
+            Iemand riep "We gaan toch gewoon rocken, dus Whatever!"<br>
+                ..en dit is blijven hangen. Stuk voor stuk muzikanten met ervaring, 'feeling', en heel belangrijk: een grote liefde voor rockmuziek!<br>
+                 Ondanks wat omzwervingen van de diverse bandleden, komen ze altijd weer bij elkaar terecht. De klik die ze hebben is voel- en hoorbaar op het podium.<br>
+                Met humor ( en af en toe vliegende drumstokken!) zorgen zij voor een knallend optreden.
+                <br>
+                Van ACDC tot van Halen, van Lady Gaga tot Muse...<br>
+                <br>
+                <h3 style="color:#802020;"><i><b>Whatever.. als 't maar Rock is!</b></i></h3>
+
+            <i>*Op dit moment zijn wij klaar om de podia te bestormen en een avondvullend programma vol
+            gevarieerde rockmuziek aan het publiek voor te schotelen!</i>
+            
+            </div>
+            <br>
+            <br>
+              </div>
+            </div>
+          </div>
+          <h2 style="color:#802020;"><i>Een kleine greep uit ons portfolio</i></h2>
+          <br>
+          
+          
+          
+          <div class="demos">
+            <p class="demo" style="color: #802020;"> <b>Whatever</b> - Ready to go </p>
+          <audio controls>
+            <source src="audio/ready_to_go.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio>
+          <p class="demo" style="color: #802020;"> <b>Whatever</b> - Don't tell me what love can do </p>
+          <audio controls>
+            <source src="audio/Don't_Tell_Me_What_Love_Can_Do.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio>
+          <p class="demo" style="color: #802020;"> <b>Whatever</b> - Highway to Hell </p>
+          <audio controls>
+            <source src="audio/Highway_to_Hell.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio>
+          <p class="demo" style="color: #802020;"><b> Whatever </b>- Psycho mix 3 </p>
+          <audio controls>
+            <source src="audio/Psycho_MIX_3.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio>
+        </div>
+          <br>
+          <br>
+          <footer><img id="hardrock" src="img/hardrock.jpg" width="60px" height="60px">&nbsp &nbsp<i>Copyright: Whatever</i></footer>
+          <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+          crossorigin="anonymous">
+          </script>
+      </body>
+    </html>
