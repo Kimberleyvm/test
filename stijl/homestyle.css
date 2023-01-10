@@ -1,0 +1,196 @@
+body{
+    opacity: 50%;
+    width: auto;
+    height: auto;
+    background-color: black;
+   
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center top;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}@media only screen and (max-width: 600px){
+    body{
+        background-size: 250px;
+        opacity: 75%;
+    }
+}
+.header{
+    background-color: black;
+    
+    
+}
+#logo{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}@media only screen and (max-width: 800px){
+  #logo{
+    width:250px;
+    height:250px;
+  }
+}
+.indextext{
+    text-align: center;
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 35pt;
+    padding-top: 10px;
+}@media only screen and (max-width: 600px){
+    .indextext{
+        font-size: 25pt;
+        
+    }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 100px;
+    height:auto;
+    width: auto;
+}
+.een{
+    color: white;
+    animation-timing-function: ease-in;
+    background-color: grey;
+    height: 100px;
+    text-align: center;
+    box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+    font-size: 25pt;
+    border-radius: 15px;
+    font-family: 'Rubik Vinyl', cursive;
+    
+}
+    
+    
+@media only screen and (max-width: 600px){
+    .een{
+        background-color: rgb(207, 3, 3);
+        color: black;
+        padding: 25px;
+        font-size: 25pt;
+        box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+        border-radius: 25px;
+        height: 75px;
+    }
+}
+.een{
+    animation-duration: 0.5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+    
+  }
+
+  
+.twee{
+    color: white;
+    background-color: grey;
+    height: 100px;
+    text-align: center;
+    animation-timing-function: ease-in;
+    box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+    font-size: 25pt;
+    border-radius: 15px;
+    font-family: 'Rubik Vinyl', cursive;
+}
+@media only screen and (max-width: 600px){
+    .twee{
+        background-color: rgb(207, 3, 3);
+        color: black;
+        font-size: 25pt;
+        box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+        border-radius: 25px;
+        padding: 25px;
+        height: 75px;
+    }
+}
+.twee{
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.drie{
+    color: white;
+    background-color: grey;
+    height: 100px;
+    text-align: center;
+    animation-timing-function: ease-in;
+    box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+    font-size: 25pt;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: 'Rubik Vinyl', cursive;
+}
+
+@media only screen and (max-width: 600px){
+    .drie{
+        background-color: rgb(207, 3, 3);
+        color: black;
+        font-size: 25pt;
+        padding: 25px;
+        box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+        border-radius: 25px;
+        height: 75px;
+    }
+}
+.drie {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slideout {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .een:hover, .twee:hover, .drie:hover{
+    background-color: rgb(201, 0, 0);
+  }
+  .een:active, .twee:active, .drie:active{
+    color: white;
+  }
+  a:link, a:visited{
+    text-decoration: none;
+    pointer-events: initial;
+  }
+  a:hover{
+    color: darkred;
+    pointer-events: initial;
+  }
+  a:active{
+    color: red;
+    pointer-events: initial;
+  }
+  .infotext{
+    color: darkred;
+  }
